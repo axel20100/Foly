@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('/profile', function (){
+    return view('profile');
+});
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/login', function (){
+    return view('login');
 });
